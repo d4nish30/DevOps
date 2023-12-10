@@ -17,10 +17,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Amazon ECR "Login" Action for GitHub Actions
-        uses: aws-actions/amazon-ecr-login@v2.0.1
-        with:
-          aws-region: eu-north-1
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
